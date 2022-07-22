@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+struct Story {
+    let title: String
+    let choice1: String
+    let choice2: String
+    
+    init(title: String, choice1: String, choice2: String) {
+        self.title = title
+        self.choice1 = choice1
+        self.choice2 = choice2
+    }
+}
+
+let stories: [Story] = [
+    Story(title: "You see a fork in the road", choice1: "Take a left.", choice2: "Take a right"),
+    Story(title: "You see a tiger", choice1: "Shout for help.", choice2: "Play dead"),
+    Story(title: "You found a treasure chest", choice1: "Open it.", choice2: "Check for traps")
+]
